@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
+        <key>keyEquivalent</key>
+        <string>^~Z</string>        
         <key>uuid</key>
         <string>70BE9048-25B7-45B3-98F9-4E275ECBE1C7</string>
         <key>patterns</key>
