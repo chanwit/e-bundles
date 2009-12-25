@@ -17,6 +17,6 @@ awk -F\" '/id=/ {print "\tdef " $2}' $TM_PROJECT_DIRECTORY$TM_ZUL_FILE</string>
         <key>scope</key>
         <string>source.groovy</string>
 	    <key>keyEquivalent</key>
-	    <string>^@l</string>        
+	    <string>^L</string>        
     </dict>
 </plist>
