@@ -6,5 +6,12 @@
         <string>ZKGrails</string>
         <key>uuid</key>
         <string>33663AC5-A294-4D5C-B1DE-937F04C635A2</string>
+        <key>mainMenu</key>
+        <dict>
+            <key>items</key>
+            <array>
+                <string>6C11886E-11F1-4F1E-9258-D2F99AEF4C27</string>
+            </array>
+        </dict>
     </dict>
 </plist>

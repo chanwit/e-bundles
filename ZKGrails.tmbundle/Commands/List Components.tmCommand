@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>List Components</string>
+        <key>uuid</key>
+        <string>6C11886E-11F1-4F1E-9258-D2F99AEF4C27</string>
+        <key>input</key>
+        <string>none</string>
+        <key>output</key>
+        <string>replaceSelectedText</string>
+        <key>command</key>
+        <string>export TM_ZUL_FILE=`echo $TM_FILEPATH | awk -F"composers" '{ sub(/Composer\.groovy/, "", $2); print $2 }' | sed -r 's/([a-z]+)([A-Z][a-z]+)/\1_\l\2/g' | awk '{ print "/web-app" tolower($0) ".zul" }'`
+
+awk -F\" '/id=/ {print "\tdef " $2}' $TM_PROJECT_DIRECTORY$TM_ZUL_FILE</string>
+        <key>scope</key>
+        <string>source.groovy</string>
+	    <key>keyEquivalent</key>
+	    <string>^@l</string>        
+    </dict>
+</plist>
