@@ -23,12 +23,12 @@ cd "$TM_PROJECT_DIRECTORY"
 cd "$DIR"
 
 latex --src-specials "$TEX" | pre
-open -a open "$DVI"</string>
+open yap -1 -s \""$TM_LINE_NUMBER $TM_FILENAME"\" "$DVI"</string>
         <key>scope</key>
         <string>text.tex.latex</string>
         <key>beforeRunningCommand</key>
         <string>saveModifiedFiles</string>
         <key>keyEquivalent</key>
-        <string>@r</string>
+        <string>@</string>
     </dict>
 </plist>
