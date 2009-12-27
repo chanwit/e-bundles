@@ -22,7 +22,7 @@ DVI="${FILE%.*}.DVI"
 cd "$TM_PROJECT_DIRECTORY"
 cd "$DIR"
 
-open yap -1 -s \""$TM_LINE_NUMBER $TM_FILENAME"\" "$DVI"</string>
+open "`which yap`" -1 -s \""$TM_LINE_NUMBER $TM_FILENAME"\" "$DVI"</string>
         <key>scope</key>
         <string>text.tex.latex</string>
         <key>beforeRunningCommand</key>
