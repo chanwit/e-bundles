@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>Generate PDF</string>
+        <key>uuid</key>
+        <string>BF5C9498-6618-4381-B318-73D89CC5AD76</string>
+        <key>input</key>
+        <string>none</string>
+        <key>output</key>
+        <string>showAsHTML</string>
+        <key>command</key>
+        <string># just to remind you of some useful environment variables
+M="${TM_LATEX_MASTER:-$TM_FILEPATH}"
+
+FILE="$(basename "$M")"
+DIR="$(dirname "$M")"
+TEX="${FILE%.*}.tex"
+DVI="${FILE%.*}.dvi"
+PDF="${FILE%.*}.pdf"
+
+cd "$TM_PROJECT_DIRECTORY"
+cd "$DIR"
+
+dvipdfm "$DVI" | pre
+open -a open "$PDF"</string>
+        <key>beforeRunningCommand</key>
+        <string>nop</string>
+        <key>keyEquivalent</key>
+        <string></string>
+        <key>scope</key>
+        <string>text.tex.latex</string>
+    </dict>
+</plist>
