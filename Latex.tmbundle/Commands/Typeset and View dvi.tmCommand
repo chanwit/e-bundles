@@ -22,7 +22,7 @@ DVI="${FILE%.*}.DVI"
 cd "$TM_PROJECT_DIRECTORY"
 cd "$DIR"
 
-latex --src-specials "$TEX"
+latex --src-specials "$TEX" | pre
 open yap "$DVI"
 </string>
         <key>scope</key>
