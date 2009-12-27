@@ -23,8 +23,7 @@ cd "$TM_PROJECT_DIRECTORY"
 cd "$DIR"
 
 latex --src-specials "$TEX" | pre
-open yap "$DVI"
-</string>
+open -a open "$DVI"</string>
         <key>scope</key>
         <string>text.tex.latex</string>
         <key>beforeRunningCommand</key>
