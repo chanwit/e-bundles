@@ -6,7 +6,7 @@ def esc(str)
 end
 
 is_math = !ENV['TM_SCOPE'].match(/math/).nil?
-style = $style || 'texttt'
+style = ARGV[0] || 'texttt'
 # The following line might be problematic if the command is used elsewhere
 style = style.sub(/^text/,'math').sub(/^emph$/,'mathit') if is_math
 s = STDIN.read
