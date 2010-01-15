@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>window</string>
+        <key>uuid</key>
+        <string>DC2B6210-F4A3-4C03-92F9-04A84A71B475</string>
+        <key>content</key>
+        <string>&lt;window id="wnd${1:Main}" apply="\${${2:${TM_FILENAME/(.*?)(\..+)/$1/}}Composer}"&gt;
+	$0
+&lt;/window&gt;
+</string>
+        <key>scope</key>
+        <string>text.zul</string>
+        <key>tabTrigger</key>
+        <string>window</string>
+    </dict>
+</plist>

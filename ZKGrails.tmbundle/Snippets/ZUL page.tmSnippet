@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>ZUL page</string>
+        <key>uuid</key>
+        <string>EA577E75-73A0-4A53-B114-B0C72E6C8103</string>
+        <key>tabTrigger</key>
+        <string>zk</string>
+        <key>content</key>
+        <string>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit" ?&gt;
+&lt;?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?&gt;
+
+&lt;?page zscriptLanguage="GroovyGrails"?&gt;
+
+&lt;zk xmlns:h="http://www.w3.org/1999/xhtml"&gt;
+	$0
+&lt;/zk&gt;
+</string>
+        <key>scope</key>
+        <string>text.zul</string>
+    </dict>
+</plist>

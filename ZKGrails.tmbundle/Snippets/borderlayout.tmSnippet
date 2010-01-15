@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>borderlayout</string>
+        <key>uuid</key>
+        <string>70A768D7-17D6-4B8B-A14A-3024825FE732</string>
+        <key>content</key>
+        <string>&lt;borderlayout height="100%"&gt;
+	&lt;north size="80px" border="0"&gt;
+		&lt;h:h1&gt;Header&lt;/h:h1&gt;
+	&lt;/north&gt;
+	&lt;west width="150px" border="0" flex="true" splittable="true" margins="0,5,0,0"&gt;
+	&lt;/west&gt;
+	&lt;center flex="true"&gt;
+		$0
+	&lt;/center&gt;
+	&lt;east width="150px" title="Title" flex="true" margins="0,5,5,0" collapsible="true"&gt;
+	&lt;/east&gt;	
+	&lt;south size="40px" border="0"&gt;
+		footer
+	&lt;/south&gt;
+&lt;/borderlayout&gt;</string>
+        <key>scope</key>
+        <string>text.zul</string>
+        <key>tabTrigger</key>
+        <string>borderlayout</string>
+    </dict>
+</plist>
