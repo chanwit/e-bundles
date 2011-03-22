@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+. gobin
+. goversion
+
+require_cmd "$GC"
+require_cmd "$LD"
+
+TMPDIR="`mktemp -d -t gorun`"
+trap "rm -rf '$TMPDIR'" EXIT
+
+BASENAME="`basename -- "$*" .go`"
+SOURCE="$*"
+TARGET="$TMPDIR/$BASENAME"
+OBJECT="$TMPDIR/$BASENAME.$O"
+
+set -e
+
+"$GC" -o "$OBJECT" "$SOURCE" 1>&2
+"$LD" -o "$TARGET" "$OBJECT" 1>&2
+"$TARGET"

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+. gobin
+. goversion
+
+require_cmd "$GC"
+
+SOURCE="$*"
+TARGET="/dev/null"
+
+set -e
+
+"$GC" -o "$TARGET" "$SOURCE" 1>&2
+echo "Build succeeded."
